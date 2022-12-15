@@ -1,0 +1,70 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 30px;
+
+  &__container {
+    position: relative;
+    text-align: left;
+  }
+
+  &__img {
+    position: relative;
+    max-width: 270px;
+    width:100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &--default {
+      width: 100%;
+    }
+
+    &--hover {
+      display:none; /* flex for :hover*/
+      position: absolute;
+      background-color: $dynamic-color;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+
+    &:hover &--hover {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--socials {
+      display: flex;
+      margin: 0 auto;
+      gap: 4px;
+    }
+
+    &--icon:hover &--icon-background {
+      fill: $color-white;
+    }
+
+    &--icon:hover &--icon-logo {
+      fill: $dynamic-color;
+    }
+  }
+
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-cards-name;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-cards-desc;
+  }
+
+}

@@ -1,0 +1,15 @@
+
+$font: 'Lato';
+
+$color-white: #FFFFFF;
+$color-main: #F6F6F6;
+$color-menu: #3C3C3C;
+$color-cards-name: #282528;
+$color-cards-desc: #646464;
+$dynamic-color: #18B5DC;
+$color-cards: #5DCBE6;
+
+@import "./general/_general";
+@import "./layouts/_layouts";
+@import "./elements/_elements";
+@import "./blocks/_blocks";

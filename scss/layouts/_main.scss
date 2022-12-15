@@ -1,0 +1,28 @@
+.main {
+  background-color: $color-main;
+  padding: 150px 135px;
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    &--underscore {
+      margin: 0 auto;
+      max-width: 45px;
+      border-bottom: 4px solid #DDDBDB;
+    }
+  }
+
+  &__subtitle {
+    margin: 40px auto 60px auto;
+    max-width: 570px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
